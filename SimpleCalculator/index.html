@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="inner-main">
+            <div class="result">
+                <input type="text" id="result" placeholder="result" value="0" readonly>
+                <button onclick="ClearResult()">C</button>
+            </div>
+            <div class="keypad">
+                <div class="row">
+                    <button value="1" onclick="PressKey(this.value)">1</button>
+                    <button value="2" onclick="PressKey(this.value)">2</button>
+                    <button value="3" onclick="PressKey(this.value)">3</button>
+                    <button value="/" onclick="PressKey(this.value)">÷</button>
+                </div>
+                <div class="row">
+                    <button value="4" onclick="PressKey(this.value)">4</button>
+                    <button value="5" onclick="PressKey(this.value)">5</button>
+                    <button value="6" onclick="PressKey(this.value)">6</button>
+                    <button value="*" onclick="PressKey(this.value)">×</button>
+                </div>
+                <div class="row">
+                    <button value="7" onclick="PressKey(this.value)">7</button>
+                    <button value="8" onclick="PressKey(this.value)">8</button>
+                    <button value="9" onclick="PressKey(this.value)">9</button>
+                    <button value="-" onclick="PressKey(this.value)">-</button>
+                </div>
+                <div class="row">
+                    <button class="first-child" onclick="ShowReslut()">=</button>
+                    <button value="0" onclick="PressKey(this.value)">0</button>
+                    <button value="." onclick="PressKey(this.value)">.</button>
+                    <button value="+" onclick="PressKey(this.value)" class="last-child">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

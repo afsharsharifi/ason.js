@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    background-color: #E9D5DA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-main {
+    background-color: #827397;
+    border-radius: 30px;
+    padding: 40px;
+}
+
+.result input {
+    width: 150px;
+    height: 60px;
+    float: left;
+    border-radius: 10px 0 0 0;
+    border: none;
+    padding: 5px;
+    font-size: 11pt;
+}
+
+.result input:focus {
+    outline: none;
+}
+
+.result button {
+    width: 50px;
+    height: 60px;
+    float: left;
+    font-size: 11pt;
+    border-radius: 0 10px 0 0;
+    border: none;
+}
+
+.keypad .row button {
+    width: 50px;
+    height: 60px;
+    float: left;
+    border: none;
+}
+
+.result button:hover,
+.keypad .row button:hover {
+    cursor: pointer;
+    background-color: rgba(50, 50, 168, 0.7);
+    color: white;
+}
+
+
+.first-child {
+    border-radius: 0 0 0 10px;
+}
+
+.last-child {
+    border-radius: 0 0 10px 0;
+}
+
+@media screen and (min-width: 450px) {
+    .result input {
+        width: 225px;
+    }
+
+    .result button {
+        width: 75px;
+    }
+
+    .keypad .row button {
+        width: 75px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .result input {
+        width: 375px;
+    }
+
+    .result button {
+        width: 125px;
+    }
+
+    .keypad .row button {
+        width: 125px;
+    }
+}
