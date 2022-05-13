@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    background-color: #001;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#note {
+    font-size: 16pt;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+
+#theme-switcher {
+    width: 50%;
+    height: 300px;
+    font-size: 32pt;
+    cursor: pointer;
+    background-color: transparent;
+    border: 3px solid #229ED9;
+    border-radius: 20px;
+    color: #FFF;
+}
