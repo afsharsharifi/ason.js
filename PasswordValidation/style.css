@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dfdfdf;
+}
+
+.inner-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.top-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-image {
+    background-image: url('https://ps.w.org/wp-simple-firewall/assets/icon-256x256.png?rev=2475382');
+    width: 250px;
+    height: 250px;
+}
+
+.content form {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tilte-form {
+    font-size: 24pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content form .items .input-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.content form .items .input-item label {
+    font-size: 11pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 2px;
+}
+
+.content form .items .input-item input {
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+}
+
+.content form .items .input-item input:focus {
+    outline: none;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 30px;
+}
+
+.progress0 {
+    width: 0;
+    height: 20px;
+    background-color: green;
+    border-radius: 30px;
+}
+
+.progress20 {
+    width: 20%;
+    height: 20px;
+    background-color: #4ade80;
+    border-radius: 30px;
+}
+
+.progress40 {
+    width: 40%;
+    height: 20px;
+    background-color: #22c55e;
+    border-radius: 30px;
+}
+
+.progress60 {
+    width: 60%;
+    height: 20px;
+    background-color: #16a34a;
+    border-radius: 30px;
+}
+
+.progress80 {
+    width: 80%;
+    height: 20px;
+    background-color: #15803d;
+    border-radius: 30px;
+}
+
+.progress100 {
+    width: 100%;
+    height: 20px;
+    background-color: #14532d;
+    border-radius: 30px;
+}
