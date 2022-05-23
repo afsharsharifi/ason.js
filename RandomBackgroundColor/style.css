@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.main>button#current-color:disabled,
+div.main>button#current-color[disabled] {
+    background-color: #FFFFFF;
+    color: #000000;
+    width: 50%;
+    height: 200px;
+    font-size: 24pt;
+    border-radius: 50px 5px 50px 5px;
+    margin: 20px 10px;
+    border: none;
+}
+
+div.main>button#change-color {
+    background-color: #FFFFFF;
+    width: 80px;
+    height: 80px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    font-size: 16pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.main>button#change-color:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    transition: 0.5s;
+    cursor: pointer;
+}
