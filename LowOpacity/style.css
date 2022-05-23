@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+div.main>header {
+    background-color: #F4BFBF;
+    height: 10vh;
+}
+
+
+div.main>main {
+    background-color: #FFD9C0;
+    height: 80vh;
+    width: 69%;
+    display: inline-block;
+}
+
+div.main>nav {
+    background-color: #FAF0D7;
+    height: 80vh;
+    width: 30%;
+    display: inline-block;
+}
+
+div.main>footer {
+    background-color: #8CC0DE;
+    height: 10vh;
+}
