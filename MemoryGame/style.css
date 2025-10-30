@@ -1,0 +1,114 @@
+/* ====== GLOBAL STYLE ====== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: radial-gradient(circle at top, #0a0a0a 0%, #1b1b1b 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* ====== GAME GRID ====== */
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    width: 80px;
+    height: 80px;
+    background-color: #222;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card.flipped {
+    background-color: #333;
+    transform: rotateY(180deg);
+}
+
+.card.matched {
+    background-color: #00ffcc;
+    color: #000;
+    cursor: default;
+    transform: scale(1.1);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .game-container {
+        grid-template-columns: repeat(4, 60px);
+        grid-gap: 8px;
+    }
+
+    .card {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+}
+
+/* ====== ANIMATED BG ====== */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #0f0f0f, #1f1f1f, #0f0f0f);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
+}

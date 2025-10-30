@@ -7,4 +7,5 @@
   <li><a href="https://github.com/afsharsharifi/ason.js/tree/master/RandomBackgroundColor">Random Background Color</a></li>
   <li><a href="https://github.com/afsharsharifi/ason.js/tree/master/LowOpacity">Low Opacity</a></li>
   <li><a href="https://github.com/afsharsharifi/ason.js/tree/master/DigitalClock">Digital Clock</a></li>
+  <li><a href="https://github.com/afsharsharifi/ason.js/tree/master/MemoryGame">Memory Game</a></li>
 </ul>
